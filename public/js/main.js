@@ -1,8 +1,12 @@
-$("document").ready(function() {
-    console.log("JS loaded");
-});
+document.addEventListener('DOMContentLoaded', function() {
 
-$("#play-btn").click(function() {
-    console.log("categories");
-    window.location.href = "/pages/categories.php";
+    $("document").ready(function() {
+        console.log("JS loaded");
+    });
+
+    $("#play-btn").on("click", function() {
+        console.log("categories");
+        window.location.href = "/pages/categories.php";
+    });
+
 });
