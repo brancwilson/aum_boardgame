@@ -1,12 +1,5 @@
 <?php
-    $myVar = "test";
+    require_once __DIR__ . '/../templates/header.php';
 ?>
 
-<html>
-  <head>
-    <title>Test</title>
-  </head>
- <body>
-    <h1><?= $myVar ?></h1>
- </body>
-</html>
+<h1>Welcome to boardgame</h1>
