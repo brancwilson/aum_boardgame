@@ -7,6 +7,6 @@
     <title>Test</title>
   </head>
  <body>
-    <h1><?php $myVar ?></h1>
+    <h1><?= $myVar ?></h1>
  </body>
 </html>
