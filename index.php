@@ -1,10 +1,12 @@
 <?php
-
+    $myVar = "test";
 ?>
 
 <html>
   <head>
     <title>Test</title>
   </head>
- <body></body>
+ <body>
+    <h1><?php $myVar ?></h1>
+ </body>
 </html>
