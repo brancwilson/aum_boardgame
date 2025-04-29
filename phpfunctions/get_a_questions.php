@@ -15,6 +15,7 @@ try {
     $pdo = new PDO($dsn, DB_USER, DB_PASS, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 
     if ($pdo) {
+        error_log(">>>>>>>>>> LOADING A QUESTIONS...");
         $data = $pdo->query("SELECT * FROM a_questions")->fetchAll();
         foreach ($data as $row => $key) {
             echo("
