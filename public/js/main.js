@@ -9,17 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = "/pages/categories.php";
     });
 
-    $("#test-btn").on("click", function() {
-        $.ajax({
-            url: '/../phpfunctions/functions.php',
-            type: 'post',
-            data: {},
-            success: function() {
-                alert("done");
-            }
-        })
-    });
-
     $("#settings-btn").on("click", function() {
         window.location.href = "/pages/configure_game.php";
     });
