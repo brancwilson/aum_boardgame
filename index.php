@@ -1,6 +1,7 @@
 <?php
     require_once __DIR__ . '/templates/header.php';
 ?>
+<script src="/public/js/main.js"></script>
 
 <h1>A University in Motion</h1>
 <button id="play-btn">Play</button>
