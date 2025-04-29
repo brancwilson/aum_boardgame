@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function get_a_questions() {
         $.ajax({
             url: '/../phpfunctions/get_a_questions.php',
-            type: 'post',
+            type: 'get',
             data: {},
             success: function(response) {
                 $("#a-questions-table").append("<tr id='questions-table-labels'><td>Question</td><td>Answer</td><td></td></tr>")
