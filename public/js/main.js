@@ -20,4 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     });
 
+    $("#settings-btn").on("click", function() {
+        window.location.href = "/pages/configure_game.php";
+    });
+
 });
