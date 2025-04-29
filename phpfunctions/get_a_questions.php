@@ -15,9 +15,7 @@ try {
     $pdo = new PDO($dsn, DB_USER, DB_PASS, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 
     if ($pdo) {
-        $sql = "SELECT * FROM a_questions";
-
-        $data = $pdo->query($sql)->fetchAll();
+        $data = $pdo->query("SELECT * FROM a_questions")->fetchAll();
         foreach ($data as $row => $key) {
             echo("
             <tr>
