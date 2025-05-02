@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
      // .on() is used for dynamically added elements, since the DOM is already loaded
      $(document).on("click", ".delete-question-btn", function() {
+        $("#a-questions-table").empty();
 
         var deleteID = (this.id);
         var deleteQuestion = deleteID.split("-");
