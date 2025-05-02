@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     function loadQuestionTables() {
+        $("#a-questions-table").empty();
         get_a_questions();
     }
 
@@ -16,10 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     loadQuestionTables();
 
-     // .on() is used for dynamically added elements, since the DOM is already loaded
-     $(document).on("click", ".delete-question-btn", function() {
-        $("#a-questions-table").empty();
-
+        // .on() is used for dynamically added elements, since the DOM is already loaded
+        $(document).on("click", ".delete-question-btn", function() {
         var deleteID = (this.id);
         var deleteQuestion = deleteID.split("-");
         console.log(deleteQuestion[1]);
@@ -33,5 +32,5 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log("Question deleted!");
             }
         })
-     });
+    });
 })
