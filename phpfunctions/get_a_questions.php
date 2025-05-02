@@ -22,7 +22,7 @@ try {
             <tr>
                 <td>".$key['question']."</td>
                 <td>".$key['answer']."</td>
-                <td><button class='edit-question-btn' id='edit-question".$key['question_id']."'>Edit</button></td>
+                <td><button class='delete-question-btn' id='a_".$key['question_id']."'>Delete</button></td>
             </tr>
             ");
     }
