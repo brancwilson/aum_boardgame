@@ -22,6 +22,7 @@ try {
 
             $sql = "DELETE FROM ? WHERE question_id = ?";
             $stmt = $pdo->prepare($sql);
+            error_log(">>>>>>>>>>" . $deleteQuestionCategory . " -------- " . $deleteQuestionID);
             $stmt->execute([$deleteQuestionCategory, $deleteQuestionID]);
         }
     
