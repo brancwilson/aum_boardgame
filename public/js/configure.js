@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(deleteQuestion[1]);
 
         $.ajax({
-            url: '/../../phpfunctions/deletequestion.php',
+            url: '/../../phpfunctions/delete_question.php',
             type: 'post',
             data: {deleteQuestionID: deleteQuestion[1], deleteQuestionCategory: deleteQuestion[0]},
             success: function() {
