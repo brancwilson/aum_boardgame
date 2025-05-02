@@ -15,4 +15,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     loadQuestionTables();
+
+     // .on() is used for dynamically added elements, since the DOM is already loaded
+     $(document).on("click", ".delete-question-btn", function() {
+
+        var deleteID = (this.id);
+        var deleteQuestion = deleteID.split("-");
+        console.log(deleteQuestion[1]);
+
+        $.ajax({
+            url: '/../../phpfunctions/deletequestion.php',
+            type: 'post',
+            data: {deleteQuestionID: deleteQuestion[1], deleteQuestionCategory: deleteQuestion[0]},
+            success: function() {
+                loadQuestionTables();
+                console.log("Question deleted!");
+            }
+        })
 });
