@@ -25,7 +25,7 @@ table.questions-table th {
     color: white;
 }
 
-button #question-create-btn {
+#question-create-btn {
 	background-color: #2664e8;
 	border-radius:21px;
 	display:inline-block;
@@ -36,10 +36,10 @@ button #question-create-btn {
 	padding:18px 31px;
 	text-decoration:none;
 }
-button #question-create-btn:hover {
+#question-create-btn:hover {
 	background-color:#4b7de8;
 }
-button #question-create-btn:active {
+#question-create-btn:active {
 	position:relative;
 	top:1px;
 }
