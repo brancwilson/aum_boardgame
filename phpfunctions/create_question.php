@@ -23,7 +23,7 @@ try {
             $category = $_POST['category'] . "_questions";
 
             error_log(">>>>> " . $category . " ---- " . $question . " ---- " . $answer);
-            $sql = "INSERT INTO :category (answer, question) VALUES (:answer, :question)";
+            $sql = "INSERTndnjsdnjndsfjnjn INTO :category (answer, question) VALUES (:answer, :question)";
             $stmt = $pdo->prepare($sql);
             $stmt->execute([
                 ':category' => $category,
