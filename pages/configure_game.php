@@ -33,44 +33,22 @@
     <hr>
     <h3>Add Question</h3>
     <form id="add-question-form">
-        <table class="add-question-table">
-            <tr>
-                <td>
-                    <p>Question: </p>
-                </td>
-                <td>
-                    <input type="text" id="add-question-question">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Answer: </p>
-                </td>
-                <td>
-                    <input type="text" id="add-question-answer">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Category: </p>
-                </td>
-                <td>
-                    <select name="category" id="add-question-category">
-                        <option value="a">A</option>
-                        <option value="b">B</option>
-                        <option value="cd">CD</option>
-                        <option value="e">E</option>
-                        <option value="f">F</option>
-                        <option value="g">G</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button id="question-create-btn">Add</button>
-                </td>
-            </tr>
-        </table>
+            <p>Question: </p>
+            <input type="text" id="add-question-question">
+          
+            <p>Answer: </p>
+            <input type="text" id="add-question-answer">
+
+            <p>Category: </p>
+            <select name="category" id="add-question-category">
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="cd">CD</option>
+                <option value="e">E</option>
+                <option value="f">F</option>
+                <option value="g">G</option>
+            </select>
+            <button id="question-create-btn">Add</button>
     </form>
 </div>
 
