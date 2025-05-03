@@ -23,11 +23,10 @@ try {
             $category = $_POST['category'] . "_questions";
 
             error_log(">>>>> " . $category . " ---- " . $question . " ---- " . $answer);
-            $sql = "INSERT INTO a_questions (answer, question) VALUES (:answer, :question);";
+            $sql = "INSERT INTO a_questions(answer, question) VALUES (:answer, :question);";
             error_log(message: "SQL STATEMENT: " . $sql);
             $stmt = $pdo->prepare($sql);
             $stmt->execute([
-                ':category' => $category,
                 ':answer' => $answer,
                 ':question' => $question
             ]) or die(error_log($stmt->errorInfo(), true));
