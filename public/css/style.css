@@ -24,3 +24,23 @@ table.questions-table th {
     background-color: #ffa435;
     color: white;
 }
+
+button #question-create-btn {
+	background-color: #2664e8;
+	border-radius:21px;
+	display:inline-block;
+	cursor:pointer;
+	color: #ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:18px 31px;
+	text-decoration:none;
+}
+button #question-create-btn:hover {
+	background-color:#4b7de8;
+}
+button #question-create-btn:active {
+	position:relative;
+	top:1px;
+}
+        

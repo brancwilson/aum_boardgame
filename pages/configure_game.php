@@ -30,9 +30,10 @@
 
         </table>
     </div>
+    <hr>
     <h3>Add Question</h3>
     <form id="add-question-form">
-        <table>
+        <table class="add-question-table">
             <tr>
                 <td>
                     <p>Question: </p>
@@ -50,6 +51,9 @@
                 </td>
             </tr>
             <tr>
+                <td>
+                    <p>Category: </p>
+                </td>
                 <td>
                     <select name="category" id="add-question-category">
                         <option value="a">A</option>
