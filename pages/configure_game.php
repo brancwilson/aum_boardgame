@@ -11,7 +11,7 @@
         </table>
     </div>
     <h3>Add Question</h3>
-    <form id="add-question-form" action="/../phpfunctions/create_question.php" method="post">
+    <form id="add-question-form">
         <table>
             <tr>
                 <td>
