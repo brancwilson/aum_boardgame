@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             success: function(response) {
                 $("#e-questions-table").append("<tr id='questions-table-labels'><th>Question</th><th>Answer</th><th></th></tr>");
                 $("#e-questions-table").append(response);
+            }
         })
     }
     function get_f_questions() {
