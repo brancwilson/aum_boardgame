@@ -44,6 +44,15 @@ table.questions-table th {
 	top:1px;
 }
 
+div #add-question-container {
+    background-color: #bdbdbd;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 5%;
+}
+
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;

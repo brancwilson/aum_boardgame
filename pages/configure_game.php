@@ -32,24 +32,26 @@
     </div>
     <hr>
     <h3>Add Question</h3>
-    <form id="add-question-form">
-            <p>Question: </p>
-            <input type="text" id="add-question-question">
-          
-            <p>Answer: </p>
-            <input type="text" id="add-question-answer">
+    <div id="add-question-container">
+        <form id="add-question-form">
+                <p>Question: </p>
+                <input type="text" id="add-question-question">
+            
+                <p>Answer: </p>
+                <input type="text" id="add-question-answer">
 
-            <p>Category: </p>
-            <select name="category" id="add-question-category">
-                <option value="a">A</option>
-                <option value="b">B</option>
-                <option value="cd">CD</option>
-                <option value="e">E</option>
-                <option value="f">F</option>
-                <option value="g">G</option>
-            </select>
-            <button id="question-create-btn">Add</button>
-    </form>
+                <p>Category: </p>
+                <select name="category" id="add-question-category">
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="cd">CD</option>
+                    <option value="e">E</option>
+                    <option value="f">F</option>
+                    <option value="g">G</option>
+                </select>
+                <button id="question-create-btn">Add</button>
+        </form>
+    </div>
 </div>
 
 <?php require_once __DIR__ . '/../templates/footer.php'; ?>
