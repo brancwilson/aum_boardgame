@@ -34,6 +34,7 @@ table.questions-table th {
 	font-size:17px;
 	padding:18px 31px;
 	text-decoration:none;
+    border: none;
 }
 #question-create-btn:hover {
 	background-color:#4b7de8;
