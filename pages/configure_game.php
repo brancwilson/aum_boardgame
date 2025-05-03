@@ -57,6 +57,7 @@
                         <option value="cd">C & D</option>
                         <option value="e">E</option>
                         <option value="f">F</option>
+                        <option value="g">G</option>
                     </select>
                 </td>
             </tr>

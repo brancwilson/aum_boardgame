@@ -26,7 +26,30 @@ try {
                 error_log("DELETE FROM " . $deleteQuestionCategory . " WHERE question_id = " . $deleteQuestionID);
                 $stmt->execute([$deleteQuestionID]);
             } else if ($deleteQuestionCategory == 'b_questions') {
-                error_log("pass");
+                $sql = "DELETE FROM b_questions WHERE question_id = ?";
+                $stmt = $pdo->prepare($sql);
+                error_log("DELETE FROM " . $deleteQuestionCategory . " WHERE question_id = " . $deleteQuestionID);
+                $stmt->execute([$deleteQuestionID]);
+            } else if ($deleteQuestionCategory == 'cd_questions') {
+                $sql = "DELETE FROM cd_questions WHERE question_id = ?";
+                $stmt = $pdo->prepare($sql);
+                error_log("DELETE FROM " . $deleteQuestionCategory . " WHERE question_id = " . $deleteQuestionID);
+                $stmt->execute([$deleteQuestionID]);
+            } else if ($deleteQuestionCategory == 'e_questions') {
+                $sql = "DELETE FROM e_questions WHERE question_id = ?";
+                $stmt = $pdo->prepare($sql);
+                error_log("DELETE FROM " . $deleteQuestionCategory . " WHERE question_id = " . $deleteQuestionID);
+                $stmt->execute([$deleteQuestionID]);
+            } else if ($deleteQuestionCategory == 'f_questions') {
+                $sql = "DELETE FROM f_questions WHERE question_id = ?";
+                $stmt = $pdo->prepare($sql);
+                error_log("DELETE FROM " . $deleteQuestionCategory . " WHERE question_id = " . $deleteQuestionID);
+                $stmt->execute([$deleteQuestionID]);
+            } else if ($deleteQuestionCategory == 'g_questions') {
+                $sql = "DELETE FROM g_questions WHERE question_id = ?";
+                $stmt = $pdo->prepare($sql);
+                error_log("DELETE FROM " . $deleteQuestionCategory . " WHERE question_id = " . $deleteQuestionID);
+                $stmt->execute([$deleteQuestionID]);
             }
         }
     
