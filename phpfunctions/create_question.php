@@ -16,16 +16,20 @@ try {
 
     if ($pdo) {
         error_log(">>>>>>>>>>>>>>>>> PDO TRUE");
-        if (isset($_POST["question"]) & isset($_POST["answer"]) & isset($_POST["category"])) {
+        if (isset($_POST["question"]) && isset($_POST["answer"]) && isset($_POST["category"])) {
             error_log(">>>>>>>>DATA IS SET");
             $question = $_POST['question'];
             $answer = $_POST['answer'];
             $category = $_POST['category'] . "_questions";
 
             error_log(">>>>> " . $category . " ---- " . $question . " ---- " . $answer);
-            $sql = "INSERT jjjipm INTO ? (answer, question, jnjnnn) VALUES (?, ?)";
-            $stmt= $pdo->prepare($sql);
-            $stmt->execute([$category, $answer, $question]) or die(error_log($stmt->errorInfo(), true));
+            $sql = "INSERT INTO :category (answer, question) VALUES (:answer, :question)";
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute([
+                ':category' => $category,
+                ':answer' => $answer,
+                ':question' => $question
+            ]) or die(error_log($stmt->errorInfo(), true));
         }
     
     } else {
