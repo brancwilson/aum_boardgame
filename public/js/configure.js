@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
             url: '/../phpfunctions/get_a_questions.php',
             type: 'get',
             success: function(response) {
-                $("#a-questions-table").append("<tr id='questions-table-labels'><th>Question</th><th>Answer</th><th></th></tr>");
+                $("#a-questions-table").append("<tr id='questions-table-labels'><th>Question</th><th>Answer</th><th>Edit</th></tr>");
                 $("#a-questions-table").append(response);
             }
         })
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             url: '/../phpfunctions/get_b_questions.php',
             type: 'get',
             success: function(response) {
-                $("#b-questions-table").append("<tr id='questions-table-labels'><th>Question</th><th>Answer</th><th></th></tr>");
+                $("#b-questions-table").append("<tr id='questions-table-labels'><th>Question</th><th>Answer</th><th>Edit</th></tr>");
                 $("#b-questions-table").append(response);
             }
         })
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             url: '/../phpfunctions/get_cd_questions.php',
             type: 'get',
             success: function(response) {
-                $("#cd-questions-table").append("<tr id='questions-table-labels'><th>Question</th><th>Answer</th><th></th></tr>");
+                $("#cd-questions-table").append("<tr id='questions-table-labels'><th>Question</th><th>Answer</th><th>Edit</th></tr>");
                 $("#cd-questions-table").append(response);
             }
         })
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             url: '/../phpfunctions/get_e_questions.php',
             type: 'get',
             success: function(response) {
-                $("#e-questions-table").append("<tr id='questions-table-labels'><th>Question</th><th>Answer</th><th></th></tr>");
+                $("#e-questions-table").append("<tr id='questions-table-labels'><th>Question</th><th>Answer</th><th>Edit</th></tr>");
                 $("#e-questions-table").append(response);
             }
         })
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
             url: '/../phpfunctions/get_f_questions.php',
             type: 'get',
             success: function(response) {
-                $("#f-questions-table").append("<tr id='questions-table-labels'><th>Question</th><th>Answer</th><th></th></tr>");
+                $("#f-questions-table").append("<tr id='questions-table-labels'><th>Question</th><th>Answer</th><th>Edit</th></tr>");
                 $("#f-questions-table").append(response);
             }
         })
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
             url: '/../phpfunctions/get_g_questions.php',
             type: 'get',
             success: function(response) {
-                $("#g-questions-table").append("<tr id='questions-table-labels'><th>Question</th><th>Answer</th><th></th></tr>");
+                $("#g-questions-table").append("<tr id='questions-table-labels'><th>Question</th><th>Answer</th><th>Edit</th></tr>");
                 $("#g-questions-table").append(response);
             }
         })
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     $("#question-create-btn").on("click", function() {
-        event.preventhefault();
+        //event.preventhefault();
 
         var question = $("#add-question-question").val();
         var answer = $("#add-question-answer").val();
