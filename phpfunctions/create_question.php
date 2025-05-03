@@ -22,8 +22,8 @@ try {
             $answer = $_POST['answer'];
             $category = $_POST['category'] . "_questions";
 
-            error_log(">>>>> " . $category . " ---- " . $question . "----" . $answer);
-            $sql = "INSERT INTO ? (answer, question) VALUES (?, ?)";
+            error_log(">>>>> " . $category . " ---- " . $question . " ---- " . $answer);
+            $sql = "INSERT INTO ? (answer, question, jnjnnn) VALUES (?, ?)";
             $stmt= $pdo->prepare($sql);
             $stmt->execute([$category, $answer, $question]) or die(error_log($stmt->errorInfo(), true));
         }
