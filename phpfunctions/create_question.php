@@ -15,7 +15,9 @@ try {
     
 
     if ($pdo) {
+        error_log(">>>>>>>>>>>>>>>>> PDO TRUE");
         if (isset($_POST["question"]) & isset($_POST["answer"]) & isset($_POST["category"])) {
+            error_log(">>>>>>>>DATA IS SET");
             $question = $_POST['question'];
             $answer = $_POST['answer'];
             $category = $_POST['category'];
