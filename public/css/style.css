@@ -45,12 +45,11 @@ table.questions-table th {
 }
 
 div #add-question-container {
-    background-color: #bdbdbd;
+    background-color: #e2e2e2;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 2%;
     padding-bottom: 2%;
-    border-radius: 5%;
 }
 
 input[type=text], select {
