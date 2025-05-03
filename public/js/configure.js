@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var question = $("#add-question-question").val();
         var answer = $("#add-question-answer").val();
         var category = $("#add-question-category").val();
+        console.log(question + "    " + "   " + answer + "  " + category);
 
         $.ajax({
             url: '/../../phpfunctions/create_question.php',
