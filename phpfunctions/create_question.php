@@ -29,6 +29,7 @@ try {
         echo "pdo fail...";
     }
 } catch (PDOException $e) {
+    echo("Error at create_question.php");
     die($e->getMessage());
 } finally {
     if ($pdo) {
