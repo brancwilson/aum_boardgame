@@ -20,10 +20,14 @@ try {
             $deleteQuestionCategory = $_POST["deleteQuestionCategory"];
             $deleteQuestionID = $_POST["deleteQuestionID"];
 
-            $sql = "DELETE FROM ? WHERE question_id = ?";
-            $stmt = $pdo->prepare($sql);
-            error_log("DELETE FROM " . $deleteQuestionCategory . " WHERE question_id = " . $deleteQuestionID);
-            $stmt->execute([$deleteQuestionCategory, $deleteQuestionID]);
+            if ($deleteQuestionCategory == 'a') {
+                $sql = "DELETE FROM a_questions WHERE question_id = ?";
+                $stmt = $pdo->prepare($sql);
+                error_log("DELETE FROM " . $deleteQuestionCategory . " WHERE question_id = " . $deleteQuestionID);
+                $stmt->execute([$deleteQuestionID]);
+            } else if ($deleteQuestionCategory == 'b') {
+                error_log("pass");
+            }
         }
     
     } else {

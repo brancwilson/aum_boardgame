@@ -20,16 +20,22 @@ try {
             error_log(">>>>>>>>DATA IS SET");
             $question = $_POST['question'];
             $answer = $_POST['answer'];
-            $category = $_POST['category'] . "_questions";
+            $category = $_POST['category'];
 
             error_log(">>>>> " . $category . " ---- " . $question . " ---- " . $answer);
-            $sql = "INSERT INTO a_questions(answer, question) VALUES (:answer, :question);";
-            error_log(message: "SQL STATEMENT: " . $sql);
-            $stmt = $pdo->prepare($sql);
-            $stmt->execute([
-                ':answer' => $answer,
-                ':question' => $question
-            ]) or die(error_log($stmt->errorInfo(), true));
+
+            //!!!! THE TABLE NAME MUST BE EXPLICITLY STATED -- CANNOT LEAVE TO PLACEHOLDER VALUE SUCH AS ?
+            if ($category == "a") {
+                $sql = "INSERT INTO a_questions(answer, question) VALUES (:answer, :question);";
+                error_log(message: "SQL STATEMENT: " . $sql);
+                $stmt = $pdo->prepare($sql);
+                $stmt->execute([
+                    ':answer' => $answer,
+                    ':question' => $question
+                ]) or die(error_log($stmt->errorInfo(), true));
+            } else if ($category == "b") {
+                error_log("pass");
+            }
         }
     
     } else {
