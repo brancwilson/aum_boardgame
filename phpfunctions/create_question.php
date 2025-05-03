@@ -42,7 +42,7 @@ try {
                     ':question' => $question
                 ]) or die(error_log($stmt->errorInfo(), true));
             }else if ($category == "cd") {
-                $sql = "INSERT INTO c_questions(answer, question) VALUES (:answer, :question);";
+                $sql = "INSERT INTO cd_questions(answer, question) VALUES (:answer, :question);";
                 error_log(message: "SQL STATEMENT: " . $sql);
                 $stmt = $pdo->prepare($sql);
                 $stmt->execute([
