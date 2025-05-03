@@ -58,7 +58,7 @@
                     <select name="category" id="add-question-category">
                         <option value="a">A</option>
                         <option value="b">B</option>
-                        <option value="cd">C & D</option>
+                        <option value="cd">CD</option>
                         <option value="e">E</option>
                         <option value="f">F</option>
                         <option value="g">G</option>
