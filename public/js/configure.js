@@ -15,6 +15,21 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     }
 
+    $("#add-question-btn").on("click", function() {
+        var question = $("#add-question-question").val();
+        var answer = $("#add-question-answer").val();
+        var category = $("#add-question-category").val();
+
+        $.ajax({
+            url: '/../../phpfunctions/create_question.php',
+            type: 'post',
+            data: {question: question, answer: answer, category, category},
+            success: function() {
+                alert("Question added!");
+            }
+        })
+    })
+
     loadQuestionTables();
 
         // .on() is used for dynamically added elements, since the DOM is already loaded

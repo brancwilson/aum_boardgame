@@ -5,6 +5,7 @@
 
 <div>
     <div class="questions-container">
+        <h2>A Questions</h2>
         <table class="questions-table" id="a-questions-table">
 
         </table>
@@ -41,7 +42,7 @@
             </tr>
             <tr>
                 <td>
-                    <button type="submit">Add</button>
+                    <button id="question-create-btn">Add</button>
                 </td>
             </tr>
         </table>
