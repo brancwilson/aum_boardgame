@@ -9,6 +9,26 @@
         <table class="questions-table" id="a-questions-table">
 
         </table>
+        <h2>B Questions</h2>
+        <table class="questions-table" id="b-questions-table">
+
+        </table>
+        <h2>CD Questions</h2>
+        <table class="questions-table" id="cd-questions-table">
+
+        </table>
+        <h2>E Questions</h2>
+        <table class="questions-table" id="e-questions-table">
+
+        </table>
+        <h2>F Questions</h2>
+        <table class="questions-table" id="f-questions-table">
+
+        </table>
+        <h2>G Questions</h2>
+        <table class="questions-table" id="g-questions-table">
+
+        </table>
     </div>
     <h3>Add Question</h3>
     <form id="add-question-form">
