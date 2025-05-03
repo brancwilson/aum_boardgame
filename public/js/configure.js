@@ -1,7 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
     function loadQuestionTables() {
         $("#a-questions-table").empty();
+        $("#b-questions-table").empty();
+        $("#cd-questions-table").empty();
+        $("#e-questions-table").empty();
+        $("#f-questions-table").empty();
+        $("#g-questions-table").empty();
         get_a_questions();
+        get_b_questions();
+        get_cd_questions();
+        get_e_questions();
+        get_f_questions();
+        get_g_questions();
     }
 
     function get_a_questions() {
@@ -14,6 +24,58 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         })
     }
+    function get_b_questions() {
+        $.ajax({
+            url: '/../phpfunctions/get_b_questions.php',
+            type: 'get',
+            success: function(response) {
+                $("#b-questions-table").append("<tr id='questions-table-labels'><td>Question</td><td>Answer</td><td></td></tr>");
+                $("#b-questions-table").append(response);
+            }
+        })
+    }
+    function get_cd_questions() {
+        $.ajax({
+            url: '/../phpfunctions/get_cd_questions.php',
+            type: 'get',
+            success: function(response) {
+                $("#cd-questions-table").append("<tr id='questions-table-labels'><td>Question</td><td>Answer</td><td></td></tr>");
+                $("#cd-questions-table").append(response);
+            }
+        })
+    }
+    function get_e_questions() {
+        $.ajax({
+            url: '/../phpfunctions/get_e_questions.php',
+            type: 'get',
+            success: function(response) {
+                $("#e-questions-table").append("<tr id='questions-table-labels'><td>Question</td><td>Answer</td><td></td></tr>");
+                $("#e-questions-table").append(response);
+            }
+        })
+    }
+    function get_f_questions() {
+        $.ajax({
+            url: '/../phpfunctions/get_f_questions.php',
+            type: 'get',
+            success: function(response) {
+                $("#f-questions-table").append("<tr id='questions-table-labels'><td>Question</td><td>Answer</td><td></td></tr>");
+                $("#f-questions-table").append(response);
+            }
+        })
+    }
+    function get_g_questions() {
+        $.ajax({
+            url: '/../phpfunctions/get_g_questions.php',
+            type: 'get',
+            success: function(response) {
+                $("#g-questions-table").append("<tr id='questions-table-labels'><td>Question</td><td>Answer</td><td></td></tr>");
+                $("#g-questions-table").append(response);
+            }
+        })
+    }
+
+
 
     $("#question-create-btn").on("click", function() {
         event.preventDefault();

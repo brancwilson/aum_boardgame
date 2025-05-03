@@ -34,8 +34,47 @@ try {
                     ':question' => $question
                 ]) or die(error_log($stmt->errorInfo(), true));
             } else if ($category == "b") {
-                error_log("pass");
+                $sql = "INSERT INTO b_questions(answer, question) VALUES (:answer, :question);";
+                error_log(message: "SQL STATEMENT: " . $sql);
+                $stmt = $pdo->prepare($sql);
+                $stmt->execute([
+                    ':answer' => $answer,
+                    ':question' => $question
+                ]) or die(error_log($stmt->errorInfo(), true));
+            }else if ($category == "cd") {
+                $sql = "INSERT INTO c_questions(answer, question) VALUES (:answer, :question);";
+                error_log(message: "SQL STATEMENT: " . $sql);
+                $stmt = $pdo->prepare($sql);
+                $stmt->execute([
+                    ':answer' => $answer,
+                    ':question' => $question
+                ]) or die(error_log($stmt->errorInfo(), true));
+            }else if ($category == "e") {
+                $sql = "INSERT INTO e_questions(answer, question) VALUES (:answer, :question);";
+                error_log(message: "SQL STATEMENT: " . $sql);
+                $stmt = $pdo->prepare($sql);
+                $stmt->execute([
+                    ':answer' => $answer,
+                    ':question' => $question
+                ]) or die(error_log($stmt->errorInfo(), true));
+            }else if ($category == "f") {
+                $sql = "INSERT INTO f_questions(answer, question) VALUES (:answer, :question);";
+                error_log(message: "SQL STATEMENT: " . $sql);
+                $stmt = $pdo->prepare($sql);
+                $stmt->execute([
+                    ':answer' => $answer,
+                    ':question' => $question
+                ]) or die(error_log($stmt->errorInfo(), true));
+            }else if ($category == "g") {
+                $sql = "INSERT INTO g_questions(answer, question) VALUES (:answer, :question);";
+                error_log(message: "SQL STATEMENT: " . $sql);
+                $stmt = $pdo->prepare($sql);
+                $stmt->execute([
+                    ':answer' => $answer,
+                    ':question' => $question
+                ]) or die(error_log($stmt->errorInfo(), true));
             }
+
         }
     
     } else {
