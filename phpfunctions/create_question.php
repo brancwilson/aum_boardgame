@@ -20,7 +20,7 @@ try {
             error_log(">>>>>>>>DATA IS SET");
             $question = $_POST['question'];
             $answer = $_POST['answer'];
-            $category = $_POST['category'];
+            $category = $_POST['category'] . "_questions";
 
             error_log(">>>>> " . $category . " ---- " . $question . "----" . $answer);
             $sql = "INSERT INTO ? (answer, question) VALUES (?, ?)";
