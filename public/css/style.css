@@ -17,6 +17,14 @@ table.questions-table tr:nth-child(even){background-color: #f2f2f2;}
   
 table.questions-table tr:hover {background-color: #ddd;}
   
+#forty {
+    width: 40%;
+}
+
+#twenty {
+    width: 20%;
+}
+
 table.questions-table th {
     padding-top: 12px;
     padding-bottom: 12px;
