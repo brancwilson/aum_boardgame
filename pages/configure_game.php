@@ -15,12 +15,12 @@
 
             <p>Category: </p>
             <select name="category" id="add-question-category">
-                <option value="a">A</option>
-                <option value="b">B</option>
-                <option value="cd">CD</option>
-                <option value="e">E</option>
-                <option value="f">F</option>
-                <option value="g">G</option>
+                <option value="a">A - Taylor Center</option>
+                <option value="b">B - Business</option>
+                <option value="cd">CD - Athletics</option>
+                <option value="e">E - Physical Arts</option>
+                <option value="f">F - Humanities</option>
+                <option value="g">G - Healthcare/Medicine</option>
             </select>
             <button id="question-create-btn">Add</button>
         </form>
