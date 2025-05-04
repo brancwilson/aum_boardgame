@@ -90,8 +90,9 @@ document.addEventListener('DOMContentLoaded', function() {
             type: 'post',
             data: {question: question, answer: answer, category, category},
             success: function() {
-                alert("Question added!");
                 loadQuestionTables();
+                $("#add-question-question").empty();
+                $("#add-question-answer").empty();
             }
         })
     })
