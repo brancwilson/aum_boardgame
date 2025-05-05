@@ -2,6 +2,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#game-menu {
+    background-image: url("https://bunny-wp-pullzone-5vqgtgkbhi.b-cdn.net/wp-content/uploads/2023/04/AUM-Aerial-Photo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
 table.questions-table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
