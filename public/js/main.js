@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     $("document").ready(function() {
         console.log("JS loaded");
-        $("#question-text").text(localStorage.get('random_question'));
+        $("#question-text").text(window.localStorage.get('random_question'));
     });
 
     $("#play-btn").on("click", function() {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     $(".category-btn").on("click", function() {
-        localStorage.set('random_question', null);
+        window.localStorage.set('random_question', null);
         var questionCategory = $(this).val();
         console.log(questionCategory);
 
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
             type: 'post',
             data: {questionCategory: questionCategory},
             success: function(random_question) {
-                localStorage.set('random_question', random_question);
+                window.localStorage.set('random_question', random_question);
                 window.location.href = "/pages/question.php";
             }
         })
