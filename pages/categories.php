@@ -3,7 +3,9 @@
 ?>
 
 <div id="categories-menu">
-    <h1>Categories</h1>
+    <div id="category-title">
+         <h1>Categories</h1>
+    </div>
 
     <div class="category-row">
         <button class="category-btn">A</button>

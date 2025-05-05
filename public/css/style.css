@@ -100,8 +100,9 @@ button.delete-question-btn {
 
 .category-btn {
     margin: 5%;
-    width: 100px;
-    height: 100px;
+    width: 33%;
+    padding-top: 9%;
+    padding-bottom: 9%;
     font-size: 30px;
     border: none;
     background-color: orange;
@@ -114,4 +115,9 @@ button.delete-question-btn {
 
 .category-btn:hover {
     background-color: rgb(255, 191, 73);  
+}
+
+#category-title {
+  display: flex;
+  justify-content: center;
 }
