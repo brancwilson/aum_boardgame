@@ -24,16 +24,11 @@ document.addEventListener('DOMContentLoaded', function() {
             url: '/../../phpfunctions/get_question.php',
             type: 'post',
             data: {questionCategory: questionCategory},
-            success: function(random_question) {
-                for (let i = 0; i < random_question.length; i++) {
-                    console.log(`Layer ${i}:`);
-                    for (let j = 0; j < random_question[i].length; j++) {
-                      console.log(random_question[i][j]);
-                    }
-                    console.log();
-                  }
-                document.cookie = random_question[0][0];
-                window.location.href = "/pages/question.php";
+            success: function(random_question, random_answer) {
+                document.cookie = random_question;
+                console.log(random_question);
+                console.log(random_answer);
+                //window.location.href = "/pages/question.php";
             }
         })
     });
