@@ -15,6 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     $(".category-btn").on("click", function() {
         var questionCategory = $(this).val();
-        alert(questionCategory);
+        
+        $.ajax({
+            url: '/../../phpfunctions/create_question.php',
+            type: 'post',
+            data: {questionCategory: questionCategory},
+            success: function(question) {
+                $("#question-text").text(question);
+            }
+        })
     });
 });
