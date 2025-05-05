@@ -25,7 +25,13 @@ document.addEventListener('DOMContentLoaded', function() {
             type: 'post',
             data: {questionCategory: questionCategory},
             success: function(random_question) {
-                console.log(random_question[0][1]);
+                for (let i = 0; i < random_question.length; i++) {
+                    console.log(`Layer ${i}:`);
+                    for (let j = 0; j < random_question[i].length; j++) {
+                      console.log(random_question[i][j]);
+                    }
+                    console.log();
+                  }
                 document.cookie = random_question[0][0];
                 window.location.href = "/pages/question.php";
             }
