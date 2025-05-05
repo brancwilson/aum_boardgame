@@ -1,9 +1,21 @@
 body {
     font-family: arial;
     background-color: orange;
-  }
+}
+
+#menu-title {
+    font-family: "Cal Sans", sans-serif;
+}
+
+#menu-img {
+    height: 50%;
+    background-repeat: no-repeat;
+    background-image: url(https://bunny-wp-pullzone-5vqgtgkbhi.b-cdn.net/wp-content/uploads/2023/04/AUM-Aerial-Photo.jpg);
+    background-size: auto;
+}
   
 #game-menu {
+    height: 50%;
 width: 100%;
 display: flex;
 align-items: center;
