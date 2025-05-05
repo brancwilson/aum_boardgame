@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     var question = document.cookie;
+    $("#done-btn").hide();
+    $("#reveal-answer-btn").show();
 
     $("document").ready(function() {
         console.log("JS loaded");
@@ -36,5 +38,10 @@ document.addEventListener('DOMContentLoaded', function() {
     $("#reveal-answer-btn").on('click', function() {
         $("#question-text").text(question.split('@')[1])
         $(this).hide();
+        $("#done-btn").show();
+    });
+
+    $("#done-btn").on('click', function() {
+        window.location.href = "/pages/categories.php";
     });
 });

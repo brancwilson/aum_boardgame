@@ -11,6 +11,7 @@
 </div>
 <div id="reveal-answer-container">
     <button id="reveal-answer-btn">Show Answer</button>
+    <button id="done-btn">Done</button>
 </div>
 
 
