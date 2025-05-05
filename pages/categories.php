@@ -1,6 +1,7 @@
 <?php
     require_once __DIR__ . '/../templates/header.php';
 ?>
+<a href="/../index.php"><- Menu</a>
 
 <div id="categories-menu">
     <div id="category-title">
