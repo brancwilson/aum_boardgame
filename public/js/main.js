@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     $("document").ready(function() {
         console.log("JS loaded");
+        $("#question-text").text(localStorage.get('random_question'));
     });
 
     $("#play-btn").on("click", function() {
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     $(".category-btn").on("click", function() {
+        localStorage.set('random_question', null);
         var questionCategory = $(this).val();
         console.log(questionCategory);
 
@@ -21,10 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
             url: '/../../phpfunctions/get_question.php',
             type: 'post',
             data: {questionCategory: questionCategory},
-            success: function(question) {
-                alert(question);
+            success: function(random_question) {
+                localStorage.set('random_question', random_question);
                 window.location.href = "/pages/question.php";
-                $("#question-text").text(question);
             }
         })
     });
