@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     $(".category-btn").on("click", function() {
         var questionCategory = $(this).val();
-        
+        console.log(questionCategory);
+
         $.ajax({
             url: '/../../phpfunctions/get_question.php',
             type: 'post',
