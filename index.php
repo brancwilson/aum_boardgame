@@ -3,7 +3,7 @@
 ?>
 <link rel="stylesheet" href="/public/css/main_menu_style.css">
 <div id="game-menu">
-    <h1>A University in Motion</h1>
+    <h1 id="menu-title">A University in Motion</h1>
     <button class="menu-btn" id="play-btn">Play</button>
     <button class="menu-btn" id="settings-btn">Settings</button>
 </div>

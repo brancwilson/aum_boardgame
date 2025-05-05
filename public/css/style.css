@@ -82,12 +82,18 @@ button.delete-question-btn {
 	text-shadow:0px 1px 0px #d92323;
     border: none;
 }
+
 button.delete-question-btn {
 	background-color:#d34b4b;
 }
+
 button.delete-question-btn {
 	position:relative;
 	top:1px;
+}
+
+#menu-title {
+    font-family: "Cal Sans", sans-serif;
 }
 
         
