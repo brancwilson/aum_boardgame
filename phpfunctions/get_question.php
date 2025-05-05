@@ -27,6 +27,56 @@ try {
             $question = $pdo->query($sql)->fetchAll();
             //error_log(">>>>>>>>>Question: " . $question[0][0]);
             echo ($question[0][0] . "@" . $question[0][1]);
+        } else if ($_POST['questionCategory'] == 'b') {
+            $sql = "
+                SELECT question, answer
+                FROM b_questions
+                ORDER BY RANDOM()
+                LIMIT 1;
+            ";
+            $question = $pdo->query($sql)->fetchAll();
+            //error_log(">>>>>>>>>Question: " . $question[0][0]);
+            echo ($question[0][0] . "@" . $question[0][1]);
+        } else if ($_POST['questionCategory'] == 'cd') {
+            $sql = "
+                SELECT question, answer
+                FROM cd_questions
+                ORDER BY RANDOM()
+                LIMIT 1;
+            ";
+            $question = $pdo->query($sql)->fetchAll();
+            //error_log(">>>>>>>>>Question: " . $question[0][0]);
+            echo ($question[0][0] . "@" . $question[0][1]);
+        } else if ($_POST['questionCategory'] == 'e') {
+            $sql = "
+                SELECT question, answer
+                FROM e_questions
+                ORDER BY RANDOM()
+                LIMIT 1;
+            ";
+            $question = $pdo->query($sql)->fetchAll();
+            //error_log(">>>>>>>>>Question: " . $question[0][0]);
+            echo ($question[0][0] . "@" . $question[0][1]);
+        } else if ($_POST['questionCategory'] == 'f') {
+            $sql = "
+                SELECT question, answer
+                FROM f_questions
+                ORDER BY RANDOM()
+                LIMIT 1;
+            ";
+            $question = $pdo->query($sql)->fetchAll();
+            //error_log(">>>>>>>>>Question: " . $question[0][0]);
+            echo ($question[0][0] . "@" . $question[0][1]);
+        } else if ($_POST['questionCategory'] == 'g') {
+            $sql = "
+                SELECT question, answer
+                FROM g_questions
+                ORDER BY RANDOM()
+                LIMIT 1;
+            ";
+            $question = $pdo->query($sql)->fetchAll();
+            //error_log(">>>>>>>>>Question: " . $question[0][0]);
+            echo ($question[0][0] . "@" . $question[0][1]);
         }
     } else {
         echo "pdo fail...";
