@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     $("#done-btn").on('click', function() {
         window.location.href = "/pages/categories.php";
+        document.cookie = null;
         console.log("COOKIE: " + question);
     });
 });
