@@ -8,12 +8,12 @@
     <div class="category-row">
         <button class="category-btn">A</button>
         <button class="category-btn">B</button>
-        <button class="category-btn">C</button>
+        <button class="category-btn">C & D</button>
     </div>
     <div class="category-row">
-        <button class="category-btn">D</button>
         <button class="category-btn">E</button>
         <button class="category-btn">F</button>
+        <button class="category-btn">G</button>
     </div>
 </div>
 
