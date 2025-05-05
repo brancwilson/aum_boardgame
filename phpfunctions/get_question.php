@@ -17,7 +17,8 @@ try {
     if ($pdo) {
         if ($_POST['questionCategory'] == 'a') {
             $question = $pdo->query("SELECT question, answer FROM a_questions ORDER BY RANDOM() LIMIT 1")->fetchAll();
-            echo($question);
+            error_log($question[0]);
+            echo($question[0]);
         }
     } else {
         echo "pdo fail...";
