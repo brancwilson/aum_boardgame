@@ -1,6 +1,7 @@
 <?php
     require_once __DIR__ . '/../templates/header.php';
 ?>
+<a href="/../index.php"><- Menu</a>
 <h1>Configure Questions</h1>
 
 <div>
