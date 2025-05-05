@@ -16,7 +16,13 @@ try {
 
     if ($pdo) {
         if ($_POST['questionCategory'] == 'a') {
-            $question = $pdo->query("SELECT question, answer FROM a_questions ORDER BY RANDOM() LIMIT 1")->fetchAll();
+            $sql = "
+                SELECT question, answer
+                FROM a_questions
+                ORDER BY RANDOM()
+                LIMIT 1;
+            ";
+            $question = $pdo->query($sql)->fetchAll();
             error_log(">>>>>>>>>Question: " . $question[0][0]);
             return($question[0][0]);
         }
