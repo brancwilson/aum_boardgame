@@ -26,8 +26,7 @@ try {
             ";
             $question = $pdo->query($sql)->fetchAll();
             //error_log(">>>>>>>>>Question: " . $question[0][0]);
-            echo $question[0][0];
-            echo $question[0][1];
+            echo ($question[0][0] . "@" . $question[0][1]);
         }
     } else {
         echo "pdo fail...";

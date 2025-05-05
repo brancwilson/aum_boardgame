@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
             url: '/../../phpfunctions/get_question.php',
             type: 'post',
             data: {questionCategory: questionCategory},
-            success: function(random_question, random_answer) {
+            success: function(random_question) {
                 document.cookie = random_question;
                 console.log(random_question);
-                console.log(random_answer);
+
                 //window.location.href = "/pages/question.php";
             }
         })
