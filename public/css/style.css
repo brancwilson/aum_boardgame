@@ -91,3 +91,17 @@ button.delete-question-btn {
 	position:relative;
 	top:1px;
 }
+
+.category-row {
+    display: flex;
+    align-items: center;
+}
+
+#category-btn {
+    margin: 5%;
+    padding: 20px;
+    border: none;
+    background-color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}

@@ -7,7 +7,5 @@
     <button class="menu-btn" id="play-btn">Play</button>
     <button class="menu-btn" id="settings-btn">Settings</button>
 </div>
-<div id="menu-img">
-</div>
 
 <?php require_once __DIR__ . '/templates/footer.php'; ?>
