@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var question = document.cookie;
+    var question = localStorage.getItem('question')
     console.log("COOKIE: " + question);
     $("#done-btn").hide();
     $("#reveal-answer-btn").show();
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     $(".category-btn").on("click", function() {
-        document.cookie = "";
+        localStorage.setItem("question", "");
         var questionCategory = $(this).val();
         console.log(questionCategory);
 
@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
             type: 'post',
             data: {questionCategory: questionCategory},
             success: function(random_question) {
-                document.cookie = null;
-                document.cookie = random_question;
+                localStorage.setItem("question", "");
+                localStorage.setItem("question", random_question);
                 console.log("COOKIE: " + question);
                 console.log(random_question);
 
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     $("#done-btn").on('click', function() {
         window.location.href = "/pages/categories.php";
-        document.cookie = null;
+        localStorage.set("")
         console.log("COOKIE: " + question);
     });
 });
