@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
             type: 'post',
             data: {questionCategory: questionCategory},
             success: function(random_question) {
+                console.log(random_question[0][1]);
                 document.cookie = random_question[0][0];
                 window.location.href = "/pages/question.php";
             }
