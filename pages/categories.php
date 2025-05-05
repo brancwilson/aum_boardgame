@@ -14,8 +14,8 @@
         <button class="category-btn" value="cd">C & D</button>
     </div>
     <div class="category-row">
-        <button class="category-btn" value="e">E</button>
-        <button class="category-btn" value="f">F</button>
+        <button class="category-btn" value="f">E</button>
+        <button class="category-btn" value="e">F</button>
         <button class="category-btn" value="g">G</button>
     </div>
 </div>
