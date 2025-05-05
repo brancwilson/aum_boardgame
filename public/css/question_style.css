@@ -43,3 +43,7 @@ body {
 #reveal-answer-btn:hover {
     background-color: rgb(136, 117, 241);
 }
+
+#question-text {
+    font-weight: 16px;
+}
