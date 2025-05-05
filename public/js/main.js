@@ -17,10 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
         var questionCategory = $(this).val();
         
         $.ajax({
-            url: '/../../phpfunctions/create_question.php',
+            url: '/../../phpfunctions/get_question.php',
             type: 'post',
             data: {questionCategory: questionCategory},
             success: function(question) {
+                window.location.href = "/pages/question.php";
                 $("#question-text").text(question);
             }
         })
