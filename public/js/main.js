@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     $("document").ready(function() {
         console.log("JS loaded");
         var question = document.cookie;
-        $("#question-text").text(question);
+        $("#question-text").text(question.split('@')[0]);
     });
 
     $("#play-btn").on("click", function() {
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.cookie = random_question;
                 console.log(random_question);
 
-                //window.location.href = "/pages/question.php";
+                window.location.href = "/pages/question.php";
             }
         })
     });
