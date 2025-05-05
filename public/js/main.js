@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
+    var question = document.cookie;
 
     $("document").ready(function() {
         console.log("JS loaded");
-        var question = document.cookie;
         $("#question-text").text(question.split('@')[0]);
     });
 
@@ -31,5 +31,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 window.location.href = "/pages/question.php";
             }
         })
+    });
+
+    $("#reveal-answer-btn").on('click', function() {
+        $("#question-text").text(question.split('@')[1])
+        $(this).hide();
     });
 });
