@@ -15,7 +15,9 @@ try {
     $pdo = new PDO($dsn, DB_USER, DB_PASS, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 
     if ($pdo) {
+        error_log(">>>>GET RANDOM QUESTION...");
         if ($_POST['questionCategory'] == 'a') {
+            error_log(">>>>>> GET A_QUESTIONS QUESTION");
             $sql = "
                 SELECT question, answer
                 FROM a_questions
