@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             success: function(question) {
                 window.location.href = "/pages/question.php";
                 $("#question-text").text(question);
-                alert($question)
+                alert(question)
             }
         })
     });
