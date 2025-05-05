@@ -25,18 +25,20 @@ body {
 }
 
 #reveal-answer-container {
-    width: 100%;
     display: flex;
-    align-content: center;
+    justify-content: center;
+    width: 100%;
 }
 
 #reveal-answer-btn {
+    width: 100%;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: rgb(113, 90, 240);
     cursor: pointer;
+    border: none;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
