@@ -1,0 +1,21 @@
+body {
+    background-color: orange;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#question-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#question-container {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 40%;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}

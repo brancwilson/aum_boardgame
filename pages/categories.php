@@ -8,14 +8,14 @@
     </div>
 
     <div class="category-row">
-        <button class="category-btn">A</button>
-        <button class="category-btn">B</button>
-        <button class="category-btn">C & D</button>
+        <button class="category-btn" value="a">A</button>
+        <button class="category-btn" value="b">B</button>
+        <button class="category-btn" value="cd">C & D</button>
     </div>
     <div class="category-row">
-        <button class="category-btn">E</button>
-        <button class="category-btn">F</button>
-        <button class="category-btn">G</button>
+        <button class="category-btn" value="e">E</button>
+        <button class="category-btn" value="f">F</button>
+        <button class="category-btn" value="g">G</button>
     </div>
 </div>
 
