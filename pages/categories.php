@@ -6,14 +6,14 @@
     <h1>Categories</h1>
 
     <div class="category-row">
-        <button id="category-btn">A</button>
-        <button id="category-btn">B</button>
-        <button id="category-btn">C</button>
+        <button class="category-btn">A</button>
+        <button class="category-btn">B</button>
+        <button class="category-btn">C</button>
     </div>
     <div class="category-row">
-        <button id="category-btn">D</button>
-        <button id="category-btn">E</button>
-        <button id="category-btn">F</button>
+        <button class="category-btn">D</button>
+        <button class="category-btn">E</button>
+        <button class="category-btn">F</button>
     </div>
 </div>
 
