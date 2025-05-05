@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
             type: 'post',
             data: {questionCategory: questionCategory},
             success: function(question) {
+                alert(question);
                 window.location.href = "/pages/question.php";
                 $("#question-text").text(question);
-                alert(question)
             }
         })
     });
