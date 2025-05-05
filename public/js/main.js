@@ -13,4 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = "/pages/configure_game.php";
     });
 
+    $(".category-btn").on("click", function() {
+        var questionCategory = $(this).val();
+        alert(questionCategory);
+    });
 });
